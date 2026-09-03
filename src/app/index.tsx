@@ -1,10 +1,13 @@
-import { Text, View, StyleSheet, SafeAreaCon } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context"
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaProvider>
+      <View style={styles.container}>
+        <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      </View>
+    </SafeAreaProvider>
   );
 }
 
